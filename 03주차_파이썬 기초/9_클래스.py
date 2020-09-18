@@ -13,8 +13,8 @@ class Dog(Animal):
     def voice(self):
         print("멍멍")
 
-cat = Animal("고양이")
-dog = Animal("강아지")
+cat = Cat("고양이")
+dog = Dog("강아지")
 
 cat.myName()
 cat.voice()
