@@ -2,7 +2,7 @@ import copy
 import cv2
 
 img_org = cv2.imread('apple.png', cv2.IMREAD_COLOR)
-
+print(img_org[100:110, 100:110, 2])
 # B, G, R 중 한가지 색만 출력
 cv2.imshow('single', img_org[:, :, 2])
 img_ch = copy.deepcopy(img_org) # 복사 방법
@@ -17,3 +17,4 @@ img_org[:, :, 2] = 255
 cv2.imshow('change', img_org)
 
 cv2.waitKey(0)
+
