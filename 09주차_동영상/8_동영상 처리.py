@@ -1,6 +1,6 @@
 import cv2
 cap = cv2.VideoCapture("Seoul.mp4")
-
+#cap = cv2.VideoCapture(0)
 while cap.isOpened():
     # 카메라 프레임 읽기
     success, frame = cap.read()
